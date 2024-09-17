@@ -1,5 +1,5 @@
 import ManageClients from "../components/Admin/ManageClients";
-import Sidebar from "../components/SideBar/SideBar";
+import Sidebar from "../components/SideBar/Sidebar";
 import TopBar from "../components/TopBar/TopBar";
 
 
