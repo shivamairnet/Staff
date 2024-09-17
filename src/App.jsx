@@ -11,7 +11,7 @@ import ManageClients from './pages/ManageClientsPage';
 
 const router=createBrowserRouter([
   {
-    path:"/manage-clients",
+    path:"/",
     element:<ManageClients/>
   }  
 ]);
