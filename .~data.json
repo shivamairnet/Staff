@@ -1,0 +1,85 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+1 123-456-7890",
+      "address": "Doe Enterprises"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "phone": "+1 987-654-3210",
+      "address": "Smith Solutions"
+    },
+    {
+      "id": 3,
+      "name": "Michael Brown",
+      "email": "michael.brown@example.com",
+      "phone": "+1 555-123-4567",
+      "address": "Brown Consulting"
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "email": "emily.davis@example.com",
+      "phone": "+1 444-987-6543",
+      "address": "Davis Tech Innovations"
+    },
+    {
+      "id": 5,
+      "name": "David Wilson",
+      "email": "david.wilson@example.com",
+      "phone": "+1 321-456-7890",
+      "address": "Wilson Marketing"
+    },
+    {
+      "id": 6,
+      "name": "Olivia Johnson",
+      "email": "olivia.johnson@example.com",
+      "phone": "+1 111-222-3333",
+      "address": "Johnson Financial"
+    },
+    {
+      "id": 7,
+      "name": "Robert Lee",
+      "email": "robert.lee@example.com",
+      "phone": "+1 789-456-1230",
+      "address": "Lee IT Solutions"
+    },
+    {
+      "id": 8,
+      "name": "Sophia Martinez",
+      "email": "sophia.martinez@example.com",
+      "phone": "+1 654-789-1234",
+      "address": "Martinez Legal Services"
+    },
+    {
+      "id": 9,
+      "name": "James Taylor",
+      "email": "james.taylor@example.com",
+      "phone": "+1 234-567-8901",
+      "address": "Taylor Architecture"
+    },
+    {
+      "id": 10,
+      "name": "Isabella Garcia",
+      "email": "isabella.garcia@example.com",
+      "phone": "+1 987-123-6543",
+      "address": "Garcia Media Group"
+    },
+    {
+      "firstname": "Samrathdeep",
+      "lastname": "Singh",
+      "phone": "6283710412",
+      "email": "samrathdeepsingh19@gmail.com",
+      "businessname": "Ascentia Labs",
+      "status": false,
+      "name": "Samrathdeep Singh",
+      "address": "Ascentia Labs",
+      "id": 11
+    }
+  ]
+}
