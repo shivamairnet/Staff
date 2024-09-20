@@ -26,3 +26,17 @@ export function createClient(client){
         resolve({data})
     })
 }
+
+export function updateclientById(update){
+    return new Promise(async (resolve )=> {
+        const response=await fetch(`http://localhost:8000/clients/${update.id}`,{
+            method:'PATCH',
+            body:JSON.stringify(update),
+            headers:{
+                'Content-Type':'application/json'
+            }
+        })
+        const data=await response.json()
+        resolve({data})
+    });
+}

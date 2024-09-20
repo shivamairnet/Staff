@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { fetchAllclients,createClient } from "./manageclientsapi";
+import { fetchAllclients,createClient,updateclientById } from "./manageclientsapi";
 
 const initialState={
     clients:[],
@@ -20,6 +20,15 @@ export const createClientAsync=createAsyncThunk(
         return response.data;
     }
 );
+export const updateclientByIdAsync=createAsyncThunk(
+    'client/updateclientById',
+    async(update)=>{
+        const response=await updateclientById(update);
+        return response.data;
+    }
+);
+
+
 
 export const ClientSlice=createSlice({
     name:'client',
@@ -39,6 +48,14 @@ export const ClientSlice=createSlice({
         .addCase(createClientAsync.fulfilled,(state,action)=>{
             state.status='idle';
             state.clients.push(action.payload);
+        })
+        .addCase(updateclientByIdAsync.pending,(state)=>{
+            state.status='loading';
+        })
+        .addCase(updateclientByIdAsync.fulfilled,(state,action)=>{
+            state.status='idle';
+            const index=state.clients.findIndex(client=>client.id===action.payload.id);
+            state.clients[index]=action.payload;
         })
         
     }

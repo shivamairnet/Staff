@@ -48,38 +48,6 @@
       "email": "robert.lee@example.com",
       "phone": "+1 789-456-1230",
       "address": "Lee IT Solutions"
-    },
-    {
-      "id": 8,
-      "name": "Sophia Martinez",
-      "email": "sophia.martinez@example.com",
-      "phone": "+1 654-789-1234",
-      "address": "Martinez Legal Services"
-    },
-    {
-      "id": 9,
-      "name": "James Taylor",
-      "email": "james.taylor@example.com",
-      "phone": "+1 234-567-8901",
-      "address": "Taylor Architecture"
-    },
-    {
-      "id": 10,
-      "name": "Isabella Garcia",
-      "email": "isabella.garcia@example.com",
-      "phone": "+1 987-123-6543",
-      "address": "Garcia Media Group"
-    },
-    {
-      "firstname": "Samrathdeep",
-      "lastname": "Singh",
-      "phone": "6283710412",
-      "email": "samrathdeepsingh19@gmail.com",
-      "businessname": "Ascentia Labs",
-      "status": false,
-      "name": "Samrathdeep Singh",
-      "address": "Ascentia Labs",
-      "id": 11
     }
   ]
 }

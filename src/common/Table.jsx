@@ -1,8 +1,12 @@
 import React from 'react';
 import Button from "./Button";
 import { MdHeight } from 'react-icons/md';
+import AddClientsForm from '../components/Admin/AddClientsForm';
 
 const Table = ({ data, onUpdate, onDelete, columns }) => {
+  const handleFormCancel = () => {
+    
+  }
   return (
     <div className="overflow-x-auto overflow-y-auto max-h-[500px] w-full">
       <table className="min-w-full bg-white border border-gray-200">
@@ -28,6 +32,7 @@ const Table = ({ data, onUpdate, onDelete, columns }) => {
                 <Button purpose="delete" onClick={() => onDelete(item.id)} />
                 </div>
               </td>
+             
             </tr>
           ))}
         </tbody>

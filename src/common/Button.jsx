@@ -46,8 +46,8 @@ const Button = ({ purpose,id,onClick }) => {
         return 'Filter';
       case 'Add Client':
         return 'Add Client';
-      case 'cancel':
-        return 'Cancel';
+      case 'Update':
+        return 'Update';
       default:
         return 'Button';
     }
