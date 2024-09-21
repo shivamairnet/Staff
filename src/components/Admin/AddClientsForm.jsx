@@ -1,17 +1,27 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faLock, faPhone, faX, faBuilding } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../common/Button'
-import { useDispatch } from 'react-redux';
-import { createClientAsync,updateclientByIdAsync } from '../../features/Admin/manageclientsSlice';
+import {useSelector, useDispatch } from 'react-redux';
+import { createClientAsync,updateclientByIdAsync,selectselectedClient,fetchClientbyIdAsync } from '../../features/Admin/manageclientsSlice';
 
 
 
-const AddClientsForm = ({ onCancel ,heading,buttonhandle}) => {
-
+const AddClientsForm = ({ onCancel ,heading,buttonhandle,updateclientid}) => {
+    let selectedClient=null;
+    if (heading==='Update') {
+        selectedClient=useSelector(selectselectedClient);
+    }
+    console.log(selectedClient)
     const dispatch=useDispatch();
+
+    useEffect(()=>{
+        if (updateclientid) {
+          dispatch(fetchClientbyIdAsync(updateclientid));
+        }
+      },[dispatch,updateclientid]);
 
     const handleSubmit=async(values,{setSubmitting,resetForm})=>{
         try{
@@ -23,6 +33,10 @@ const AddClientsForm = ({ onCancel ,heading,buttonhandle}) => {
                     address:values.businessname
                 }
             if(heading==='Update'){
+                client.id=updateclientid
+                dispatch(updateclientByIdAsync(client));
+                console.log('Form Values:',client);
+                alert('Client Updated Successfully');
 
             }
             else if (heading==='Add'){ 
@@ -50,7 +64,7 @@ const AddClientsForm = ({ onCancel ,heading,buttonhandle}) => {
             </div>
             <hr className=" shadow-2xl mb-5 border-t-2 w-full" />
                 <Formik
-                    initialValues={{ firstname: '', lastname: '', phone: '', email: '', businessname: '', status: false }}
+                    initialValues={{ firstname:selectedClient ? selectedClient.name.split(' ')[0] : '', lastname:selectedClient ? selectedClient.name.split(' ')[1] :  '', phone:selectedClient ? selectedClient.phone: '', email: selectedClient ? selectedClient.email: '', businessname:selectedClient ? selectedClient.address: '', status: false }}
                     validationSchema={Yup.object({
                         firstname: Yup.string().required('Required'),
                         lastname: Yup.string().required('Required'),
@@ -59,6 +73,7 @@ const AddClientsForm = ({ onCancel ,heading,buttonhandle}) => {
                         businessname: Yup.string().required('Required'),
                     })}
                     onSubmit={handleSubmit}
+                    enableReinitialize={true}
                 >
                     
                     {({ isSubmitting }) => (

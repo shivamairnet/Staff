@@ -1,25 +1,15 @@
 {
   "clients": [
     {
-      "id": 1,
-      "name": "John Doe",
-      "email": "john.doe@example.com",
-      "phone": "+1 123-456-7890",
-      "address": "Doe Enterprises"
-    },
-    {
       "id": 2,
       "name": "Jane Smith",
       "email": "jane.smith@example.com",
-      "phone": "+1 987-654-3210",
-      "address": "Smith Solutions"
-    },
-    {
-      "id": 3,
-      "name": "Michael Brown",
-      "email": "michael.brown@example.com",
-      "phone": "+1 555-123-4567",
-      "address": "Brown Consulting"
+      "phone": "1234567890",
+      "address": "Smith Solutions",
+      "firstname": "Jane",
+      "lastname": "Smith",
+      "businessname": "Smith Solutions",
+      "status": false
     },
     {
       "id": 4,
