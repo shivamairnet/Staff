@@ -3,7 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faLock, faPhone, faX, faBuilding } from '@fortawesome/free-solid-svg-icons';
-import Button from '../../common/Button'
+import Button from '../../common/Button';
 import {useSelector, useDispatch } from 'react-redux';
 import { createClientAsync,updateclientByIdAsync,selectselectedClient,fetchClientbyIdAsync } from '../../features/Admin/manageclientsSlice';
 

@@ -1,5 +1,7 @@
+import ManageStaff from "../components/Admin/Staff/ManageStaffs";
 import Sidebar from "../components/SideBar/Sidebar";
 import TopBar from "../components/TopBar/TopBar";
+
 
 
 function ManageStaffPage(){
@@ -12,7 +14,7 @@ function ManageStaffPage(){
             <TopBar className="col-start-2 row-start-1"/>
 
             <div className="col-start-2 row-start-2 p-4 bg-gray-200">
-                "Hello World"
+                <ManageStaff />
             </div>
         </div>
     )

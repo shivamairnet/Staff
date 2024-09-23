@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ purpose,id,onClick }) => {
+const TaskButton = ({ purpose,id,onClick }) => {
   // Define the actions for different purposes inside the component
   // const handleAction = () => {
   //   switch (purpose) {
@@ -30,26 +30,30 @@ const Button = ({ purpose,id,onClick }) => {
   // Define the label based on the purpose
   const getButtonLabel = () => {
     switch (purpose) {
-      case 'add':
-        return 'Add';
-      case 'update':
-        return 'Update';
-      case 'delete':
-        return 'Delete';
+    //   case 'add':
+    //     return 'Add';
+    //   case 'update':
+    //     return 'Update';
+    //   case 'delete':
+    //     return 'Delete';
       // case 'logs':
       //   return 'View Logs';
-      case 'submit':
-        return 'Submit';
-      case 'cancel':
-        return 'Cancel';
-      case 'Filter':
-        return 'Filter';
-      case 'Add Client':
-        return 'Add Client';
-      case 'Add Staff':
-        return 'Add Staff';
-      case 'Add Designation':
-        return 'Add Designation';
+    //   case 'submit':
+    //     return 'Submit';
+    //   case 'cancel':
+    //     return 'Cancel';
+    //   case 'Filter':
+    //     return 'Filter';
+    //   case 'Add Client':
+    //     return 'Add Client';
+    //   case 'Add Staff':
+    //     return 'Add Staff';
+    //   case 'Add Designation':
+    //     return 'Add Designation';
+     case 'Add SubTasks':
+        return 'Add SubTasks';
+     case 'Add Details':
+        return 'Add Details';
       case 'Update':
         return 'Update';
       default:
@@ -68,6 +72,6 @@ const Button = ({ purpose,id,onClick }) => {
   );
 };
 
-export default Button;
+export default TaskButton;
 
 

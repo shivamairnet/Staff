@@ -1,5 +1,7 @@
+import ManageDesignation from "../components/Admin/Designation/ManageDesignations";
 import Sidebar from "../components/SideBar/Sidebar";
 import TopBar from "../components/TopBar/TopBar";
+
 
 
 function StaffDesignationPage(){
@@ -12,7 +14,7 @@ function StaffDesignationPage(){
             <TopBar className="col-start-2 row-start-1"/>
 
             <div className="col-start-2 row-start-2 p-4 bg-gray-200">
-                "Designations Staff"
+                <ManageDesignation />
             </div>
         </div>
     )

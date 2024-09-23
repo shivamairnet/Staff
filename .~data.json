@@ -39,5 +39,153 @@
       "phone": "+1 789-456-1230",
       "address": "Lee IT Solutions"
     }
-  ]
+  ],
+  
+      "designations": [
+        {
+          "id": 1,
+          "name": "Intern",
+          "department": "Marketing"
+        },
+        {
+          "id": 2,
+          "name": "Manager",
+          "department": "IT"
+        },
+        {
+          "id": 3,
+          "name": "Manager",
+          "department": "HR"
+        },
+        {
+          "id": 4,
+          "name": "Intern",
+          "department": "Administration"
+        },
+        {
+          "id": 5,
+          "name": "Supervisor",
+          "department": "Finance"
+        },
+        {
+          "id": 6,
+          "name": "Executive",
+          "department": "Marketing"
+        }
+      ],
+   
+      "staffs": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "phone": "123-456-7890",
+          "email": "john@example.com",
+          "designation": "Manager",
+          "status": "Active"
+        },
+        {
+          "id": 2,
+          "name": "Jane Smith",
+          "phone": "987-654-3210",
+          "email": "jane@example.com",
+          "designation": "Sales",
+          "status": "Inactive"
+        },
+        {
+          "id": 3,
+          "name": "John Doe",
+          "phone": "123-456-7890",
+          "email": "john@example.com",
+          "designation": "Marketing",
+          "status": "Active"
+        },
+        {
+          "id": 4,
+          "name": "Jane Smith",
+          "phone": "987-654-3210",
+          "email": "jane@example.com",
+          "designation": "Marketing",
+          "status": "Inactive"
+        },
+        {
+          "id": 5,
+          "name": "John Doe",
+          "phone": "123-456-7890",
+          "email": "john@example.com",
+          "designation": "Intern",
+          "status": "Active"
+        },
+        {
+          "id": 6,
+          "name": "Jane Smith",
+          "phone": "987-654-3210",
+          "email": "jane@example.com",
+          "designation": "Director",
+          "status": "Inactive"
+        },
+        {
+          "id": 7,
+          "name": "John Doe",
+          "phone": "123-456-7890",
+          "email": "john@example.com",
+          "designation": "Sales",
+          "status": "Active"
+        },
+        {
+          "id": 8,
+          "name": "Jane Smith",
+          "phone": "987-654-3210",
+          "email": "jane@example.com",
+          "designation": "Intern",
+          "status": "Inactive"
+        },
+        {
+          "id": 9,
+          "name": "John Doe",
+          "phone": "123-456-7890",
+          "email": "john@example.com",
+          "designation": "Manager",
+          "status": "Active"
+        },
+        {
+          "id": 10,
+          "name": "Jane Smith",
+          "phone": "987-654-3210",
+          "email": "jane@example.com",
+          "designation": "Supervisor",
+          "status": "Inactive"
+        },
+        {
+          "id": 11,
+          "name": "John Doe",
+          "phone": "123-456-7890",
+          "email": "john@example.com",
+          "designation": "Sales",
+          "status": "Active"
+        },
+        {
+          "id": 12,
+          "name": "Jane Smith",
+          "phone": "987-654-3210",
+          "email": "jane@example.com",
+          "designation": "Tester",
+          "status": "Inactive"
+        },
+        {
+          "id": 13,
+          "name": "John Doe",
+          "phone": "123-456-7890",
+          "email": "john@example.com",
+          "designation": "Supervisor",
+          "status": "Active"
+        },
+        {
+          "id": 14,
+          "name": "Jane Smith",
+          "phone": "987-654-3210",
+          "email": "jane@example.com",
+          "designation": "Tester",
+          "status": "Inactive"
+        }
+      ]    
 }
